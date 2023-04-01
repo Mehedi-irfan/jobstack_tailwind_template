@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- =============Font Awesome ============ -->
+    <script
+      src="https://kit.fontawesome.com/d2dcb326ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ======Google Fonts ====== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ====Custom Css File ==== -->
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <title>Jobstack</title>
+  </head>
+  <body class="font-serif">
+    <!-- ============Header Section================ -->
+    <header class="py-4 px-4 lg:px-28 bg-white drop-shadow-md relative">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="font-bold text-lg tracking-wider">JOBSTACK</a>
+        <nav>
+          <ul
+            id="nav-menu"
+            class="absolute top-16 border-t border-gray-300 left-0 bg-white w-full py-5 space-y-3 pl-4 transition-all duration-300 hidden sm:flex sm:top-1 sm:bg-transparent sm:border-none sm:items-center sm:space-y-0 sm:justify-center"
+          >
+            <li class="sm:mr-4 lg:mr-8 uppercase">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-800 transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li class="sm:mr-4 lg:mr-8 uppercase">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-800 transition-colors duration-300"
+                >Jobs</a
+              >
+            </li>
+            <li class="sm:mr-4 lg:mr-8 uppercase">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-800 transition-colors duration-300"
+                >Pages</a
+              >
+            </li>
+            <li class="sm:mr-4 lg:mr-8 uppercase">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-gray-800 transition-colors duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="other-details flex items-center space-x-3">
+            <div
+              class="form relative bg-white border border-gray-200 py-1 lg:py-2 px-3 rounded-full w-36 lg:w-56"
+            >
+              <input
+                class="text-sm focus:outline-none bg-transparent w-10/12"
+                type="text"
+                placeholder="Search"
+              />
+              <i
+                class="fa-sharp fa-solid fa-magnifying-glass text-sm text-gray-400"
+              ></i>
+            </div>
+            <div class="profile">
+              <img
+                class="w-10 h-10 rounded-full"
+                src="images/profile-img.jpg"
+                alt=""
+              />
+            </div>
+            <button id="menu-bar" class="cursor-pointer sm:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ============Header Section================ -->
+
+    <!-- =========Banner section========= -->
+    <section
+      class="bg-[url('/images/background-img.jpg')] h-screen w-full bg-cover bg-center bg-no-repeat"
+    >
+      <div class="text-center pt-8 bg-black/30 w-full h-full">
+        <h1 class="text-white text-4xl font-bold tracking-wider">
+          Find & Hire Experts <br />
+          for any Job
+        </h1>
+        <p class="mt-4 text-slate-200 leading-7 tracking-wider">
+          Find Jobs, Employment & Career Opportunities. Some of the companies
+          we've helped recruit excellent applicants over the years.
+        </p>
+      </div>
+    </section>
+    <!-- =========Banner section========= -->
+
+    <!-- script file  -->
+    <script src="Js/Script.js"></script>
+  </body>
+</html>
