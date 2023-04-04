@@ -4,3 +4,5 @@ let navBar = document.getElementById("menu-bar");
 navBar.addEventListener("click", () => {
   navMenu.classList.toggle("hidden");
 });
+
+// Swiper js Slider
