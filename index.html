@@ -258,8 +258,8 @@
           <div class="swiper-pagination"></div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev text-black bg-white"></div>
-          <div class="swiper-button-next text-black bg-white"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
 
           <!-- If we need scrollbar -->
           <div class="swiper-scrollbar"></div>
@@ -665,12 +665,14 @@
             </button>
           </div>
         </div>
-        <p
-          class="text-center mt-8 text-gray-500 hover:text-[#047857] transition-all duration-300"
-        >
-          See More Jobs
-          <i class="fa-sharp fa-solid fa-arrow-right ml-2 text-sm"></i>
-        </p>
+        <div class="relative w-36 text-center mx-auto overflow-hidden">
+          <p
+            class="text-center mt-8 text-gray-500 hover:text-[#047857] transition-all duration-300 cursor-pointer before:absolute before:w-full before:h-0.5 before:bg-[#047857] before:-left-36 before:bottom-0 before:opacity-0 hover:before:left-0 hover:before:opacity-100 hover:before:transition-all hover:before:duration-500"
+          >
+            See More Jobs
+            <i class="fa-sharp fa-solid fa-arrow-right ml-2 text-sm"></i>
+          </p>
+        </div>
       </section>
     </section>
     <!-- Popular job section  -->
@@ -720,6 +722,186 @@
     </section>
     <!-- video image banner section  -->
 
+    <!-- Counter section  -->
+    <section
+      class="w-3/4 mx-auto md:w-3/4 pb-16 flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:justify-between lg:px-20"
+    >
+      <div class="flex flex-col justify-center items-center space-y-2">
+        <h1 class="text-4xl lg:text-5xl font-semibold text-gray-900">
+          1548k<i class="fa-solid fa-plus text-3xl lg:text-4xl"></i>
+        </h1>
+        <p class="text-sm lg:text-base font-medium text-gray-400">
+          JOB FULFILLMENT
+        </p>
+      </div>
+      <div class="flex flex-col justify-center items-center space-y-2">
+        <h1 class="text-4xl lg:text-5xl font-semibold text-gray-900">
+          25<i class="fa-solid fa-plus text-3xl lg:text-4xl"></i>
+        </h1>
+        <p class="text-sm lg:text-base font-medium text-gray-400">BRANCHES</p>
+      </div>
+      <div class="flex flex-col justify-center items-center space-y-2">
+        <h1 class="text-4xl lg:text-5xl font-semibold text-gray-900">
+          9<i class="fa-solid fa-plus text-3xl lg:text-4xl"></i>
+        </h1>
+        <p class="text-sm lg:text-base font-medium text-gray-400">
+          YEARS EXPERIENCE
+        </p>
+      </div>
+    </section>
+    <!-- Counter section  -->
+
+    <!-- Find Best Company Section  -->
+    <section
+      class="w-11/12 mx-auto md:w-10/12 pb-16 md:flex md:relative md:items-center md:justify-between"
+    >
+      <div class="md:order-2 basis-1/2 flex justify-between items-center">
+        <div class="basis-2/5 relative">
+          <span
+            class="bg-white absolute text-[#047857] w-20 h-20 rounded-full flex justify-center items-center text-center shadow-2xl -top-32 md:left-44 md:z-50"
+            ><i class="fa-sharp fa-solid fa-play"></i
+          ></span>
+        </div>
+
+        <div class="relative basis-3/5">
+          <img
+            class="w-full md:w-80 h-80 md:h-96 object-cover rounded-md"
+            src="images/companies-img1.jpg"
+            alt=""
+          />
+          <img
+            class="absolute top-36 -left-44 h-60 md:h-80 md:top-48 md:-left-28 border-8 border-white rounded-md"
+            src="images/companies-img2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="mt-28 md:order-1 basis-1/2">
+        <h1 class="text-3xl font-semibold tracking-wide">
+          Find Best Companies
+        </h1>
+        <p class="mt-4 tracking-wide text-gray-500">
+          Search all the open positions on the web. Get your own personalized
+          salary estimate. Read reviews on over 30000+ companies worldwide.
+        </p>
+
+        <div class="mt-5 space-y-4">
+          <div
+            class="1st space-y-5 md:flex md:space-y-0 md:justify-between md:items-center md:space-x-4"
+          >
+            <div
+              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+            >
+              <div>
+                <img
+                  class="w-12 h-12 bg-white rounded-md p-2"
+                  src="images/spotify.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="text-lg">Spotify</h1>
+                <p class="text-sm text-[#047857]">5 Vacancy</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+            >
+              <div>
+                <img
+                  class="w-12 h-12 bg-white rounded-md p-2"
+                  src="images/facebook-logo.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="text-lg">Facebook</h1>
+                <p class="text-sm text-[#047857]">5 Vacancy</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="1st space-y-5 md:flex md:space-y-0 md:justify-between md:items-center md:space-x-4"
+          >
+            <div
+              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+            >
+              <div>
+                <img
+                  class="w-12 h-12 bg-white rounded-md p-2"
+                  src="images/google-logo.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="text-lg">Google</h1>
+                <p class="text-sm text-[#047857]">5 Vacancy</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+            >
+              <div>
+                <img
+                  class="w-12 h-12 bg-white rounded-md p-2"
+                  src="images/android_logo.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="text-lg">Android</h1>
+                <p class="text-sm text-[#047857]">5 Vacancy</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="1st space-y-5 md:flex md:space-y-0 md:justify-between md:items-center md:space-x-4"
+          >
+            <div
+              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+            >
+              <div>
+                <img
+                  class="w-12 h-12 bg-white rounded-md p-2"
+                  src="images/lenovo-logo.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="text-lg">Lenovo</h1>
+                <p class="text-sm text-[#047857]">5 Vacancy</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+            >
+              <div>
+                <img
+                  class="w-12 h-12 bg-white rounded-md p-2"
+                  src="images/linkedin_logo.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="text-lg">Linkedin</h1>
+                <p class="text-sm text-[#047857]">5 Vacancy</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-48 text-center overflow-hidden">
+            <p
+              class="text-center mt-4 text-gray-500 hover:text-[#047857] transition-all duration-300 cursor-pointer before:absolute before:w-full before:h-0.5 before:bg-[#047857] before:-left-36 before:bottom-0 before:opacity-0 hover:before:left-0 hover:before:opacity-100 hover:before:transition-all hover:before:duration-500"
+            >
+              See More Companies
+              <i class="fa-sharp fa-solid fa-arrow-right ml-2 text-sm"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Find Best Company Section  -->
+
     <!-- script file  -->
     <script src="Js/Script.js"></script>
     <!-- swiper js cdn  -->
@@ -727,7 +909,7 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 10,
         autoplay: {
           delay: 5000,
         },
