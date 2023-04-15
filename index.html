@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth" id="mainHtml">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,17 +25,19 @@
     <link rel="stylesheet" href="CSS/Style.css" />
     <title>Jobstack</title>
   </head>
-  <body class="font-serif">
+  <body class="font-serif dark:bg-gray-900">
     <!-- ============Header Section================ -->
     <header
-      class="py-4 px-4 lg:px-28 bg-white drop-shadow-md w-full fixed z-50"
+      class="py-4 px-4 lg:px-28 dark:bg-gray-900 bg-white drop-shadow-md w-full fixed z-50"
     >
       <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="font-bold text-lg tracking-wider">JOBSTACK</a>
+        <a href="#" class="font-bold text-lg dark:text-white tracking-wider"
+          >JOBSTACK</a
+        >
         <nav>
           <ul
             id="nav-menu"
-            class="absolute top-16 border-t border-gray-300 left-0 bg-white w-full py-5 space-y-3 pl-4 transition-all duration-300 hidden sm:flex sm:top-1 sm:bg-transparent sm:border-none sm:items-center sm:space-y-0 sm:justify-center"
+            class="absolute top-16 border-t border-gray-300 left-0 bg-white dark:bg-gray-900 w-full py-5 space-y-3 pl-4 transition-all duration-300 hidden sm:flex sm:top-1 sm:bg-transparent sm:border-none sm:items-center sm:space-y-0 sm:justify-center"
           >
             <li class="sm:mr-4 lg:mr-8 uppercase">
               <a
@@ -68,7 +70,7 @@
           </ul>
           <div class="other-details flex items-center space-x-3">
             <div
-              class="form relative bg-white border border-gray-200 py-1 lg:py-2 px-3 rounded-full w-36 lg:w-56"
+              class="form relative bg-white dark:bg-gray-900 border border-gray-200 py-1 lg:py-2 px-3 rounded-full w-36 lg:w-56"
             >
               <input
                 class="text-sm focus:outline-none bg-transparent w-10/12"
@@ -86,7 +88,10 @@
                 alt=""
               />
             </div>
-            <button id="menu-bar" class="cursor-pointer sm:hidden text-xl">
+            <button
+              id="menu-bar"
+              class="cursor-pointer sm:hidden text-xl dark:text-white"
+            >
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
@@ -97,6 +102,7 @@
 
     <!-- =========Banner section========= -->
     <section
+      id="headerId"
       class="bg-[url('/images/background-img.jpg')] h-screen w-full bg-cover bg-center bg-no-repeat"
     >
       <div class="text-center pt-32 lg:pt-44 bg-black/30 w-full h-full">
@@ -110,7 +116,9 @@
         </p>
 
         <!-- form section in banner section  -->
-        <div class="mt-12 bg-white w-9/12 mx-auto p-4 rounded-lg lg:flex">
+        <div
+          class="mt-12 bg-white dark:bg-gray-900 w-9/12 mx-auto p-4 rounded-lg lg:flex"
+        >
           <div
             class="keyword w-full bg-gray-200 text-left py-3 px-3 rounded-l-md mb-3 md:mb-0 md:border-r border-gray-400"
           >
@@ -151,11 +159,13 @@
     <!-- trending services section  -->
     <section class="pt-16 pb-20">
       <h1
-        class="text-3xl pl-10 lg:pl-28 md:pl-20 font-semibold tracking-wider mb-4"
+        class="text-3xl pl-10 lg:pl-28 md:pl-20 font-semibold tracking-wider mb-4 dark:text-white"
       >
         Trending Services
       </h1>
-      <p class="pl-10 mb-8 md:pl-20 lg:pl-28 text-gray-600 tracking-wide">
+      <p
+        class="pl-10 mb-8 md:pl-20 dark:text-gray-300 lg:pl-28 text-gray-600 tracking-wide"
+      >
         Search all the open positions on the web. Get your own personalized
         <br />
         salary estimate. Read reviews on over 30000+ companies worldwide.
@@ -271,8 +281,10 @@
     <!-- Popular job section  -->
     <section class="w-11/12 lg:w-10/12 mx-auto pb-28 pt-12">
       <div class="text-center space-y-4">
-        <h1 class="text-3xl font-semibold tracking-wider">Popular Jobs</h1>
-        <p class="text-gray-600 tracking-wide leading-7">
+        <h1 class="text-3xl font-semibold tracking-wider dark:text-white">
+          Popular Jobs
+        </h1>
+        <p class="text-gray-600 dark:text-gray-300 tracking-wide leading-7">
           Search all the open positions on the web. Get your own personalized
           salary <br />
           estimate. Read reviews on over 30000+ companies worldwide.
@@ -282,16 +294,16 @@
       <!-- jobs section  -->
       <section>
         <div
-          class="bg-white hover:shadow-md transition-all duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
+          class="bg-white dark:bg-gray-900 hover:shadow-md transition-all shadow-sm dark:border-gray-600 duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
         >
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-3">
               <img
-                class="w-12 h-12 border-2 border-gray-200 p-2 shadow-sm rounded"
+                class="w-12 h-12 border-2 dark:border-gray-700 border-gray-200 p-2 shadow-sm rounded"
                 src="images/facebook-logo.png"
                 alt=""
               />
-              <h1 class="text-lg">Web Designer</h1>
+              <h1 class="text-lg dark:text-white">Web Designer</h1>
             </div>
             <p
               class="border border-[#06996f1c] h-10 w-10 text-center leading-10 bg-[#06996f1c] rounded-full md:hidden"
@@ -319,7 +331,7 @@
             <p class="text-gray-400">
               <i class="fa-solid fa-location-dot"></i> <span>Australia</span>
             </p>
-            <p>$4,000-$4,500</p>
+            <p class="dark:text-white">$4,000-$4,500</p>
           </div>
 
           <div class="md:flex md:items-center md:space-x-2">
@@ -337,16 +349,16 @@
         </div>
 
         <div
-          class="bg-white hover:shadow-md transition-all duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
+          class="bg-white dark:bg-gray-900 hover:shadow-md transition-all shadow-sm dark:border-gray-600 duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
         >
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-3">
               <img
-                class="w-12 h-12 border-2 border-gray-200 p-2 shadow-sm rounded"
+                class="w-12 h-12 border-2 dark:border-gray-700 border-gray-200 p-2 shadow-sm rounded"
                 src="images/google-logo.png"
                 alt=""
               />
-              <h1 class="text-lg">Marketing Director</h1>
+              <h1 class="text-lg dark:text-white">Marketing Director</h1>
             </div>
             <p
               class="border border-[#06996f1c] h-10 w-10 text-center leading-10 bg-[#06996f1c] rounded-full md:hidden"
@@ -374,7 +386,7 @@
             <p class="text-gray-400">
               <i class="fa-solid fa-location-dot"></i> <span>USA</span>
             </p>
-            <p>$4,000-$4,500</p>
+            <p class="dark:text-white">$4,000-$4,500</p>
           </div>
 
           <div class="md:flex md:items-center md:space-x-2">
@@ -392,16 +404,16 @@
         </div>
 
         <div
-          class="bg-white hover:shadow-md transition-all duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
+          class="bg-white dark:bg-gray-900 hover:shadow-md transition-all shadow-sm dark:border-gray-600 duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
         >
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-3">
               <img
-                class="w-12 h-12 border-2 border-gray-200 p-2 shadow-sm rounded"
+                class="w-12 h-12 border-2 dark:border-gray-700 border-gray-200 p-2 shadow-sm rounded"
                 src="images/android_logo.png"
                 alt=""
               />
-              <h1 class="text-lg">App Developer</h1>
+              <h1 class="text-lg dark:text-white">App Developer</h1>
             </div>
             <p
               class="border border-[#06996f1c] h-10 w-10 text-center leading-10 bg-[#06996f1c] rounded-full md:hidden"
@@ -429,7 +441,7 @@
             <p class="text-gray-400">
               <i class="fa-solid fa-location-dot"></i> <span>China</span>
             </p>
-            <p>$4,000-$4,500</p>
+            <p class="dark:text-white">$4,000-$4,500</p>
           </div>
 
           <div class="md:flex md:items-center md:space-x-2">
@@ -447,16 +459,16 @@
         </div>
 
         <div
-          class="bg-white hover:shadow-md transition-all duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
+          class="bg-white dark:bg-gray-900 hover:shadow-md transition-all shadow-sm dark:border-gray-600 duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
         >
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-3">
               <img
-                class="w-12 h-12 border-2 border-gray-200 p-2 shadow-sm rounded"
+                class="w-12 h-12 border-2 dark:border-gray-700 border-gray-200 p-2 shadow-sm rounded"
                 src="images/lenovo-logo.png"
                 alt=""
               />
-              <h1 class="text-lg">Product Designer</h1>
+              <h1 class="text-lg dark:text-white">Product Designer</h1>
             </div>
             <p
               class="border border-[#06996f1c] h-10 w-10 text-center leading-10 bg-[#06996f1c] rounded-full md:hidden"
@@ -484,7 +496,7 @@
             <p class="text-gray-400">
               <i class="fa-solid fa-location-dot"></i> <span>Dubai</span>
             </p>
-            <p>$4,000-$4,500</p>
+            <p class="dark:text-white">$4,000-$4,500</p>
           </div>
 
           <div class="md:flex md:items-center md:space-x-2">
@@ -502,16 +514,16 @@
         </div>
 
         <div
-          class="bg-white hover:shadow-md transition-all duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
+          class="bg-white dark:bg-gray-900 hover:shadow-md transition-all shadow-sm dark:border-gray-600 duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
         >
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-3">
               <img
-                class="w-12 h-12 border-2 border-gray-200 p-2 shadow-sm rounded"
+                class="w-12 h-12 border-2 dark:border-gray-700 border-gray-200 p-2 shadow-sm rounded"
                 src="images/spotify.png"
                 alt=""
               />
-              <h1 class="text-lg">C++ Developer</h1>
+              <h1 class="text-lg dark:text-white">C++ Developer</h1>
             </div>
             <p
               class="border border-[#06996f1c] h-10 w-10 text-center leading-10 bg-[#06996f1c] rounded-full md:hidden"
@@ -539,7 +551,7 @@
             <p class="text-gray-400">
               <i class="fa-solid fa-location-dot"></i> <span>India</span>
             </p>
-            <p>$4,000-$4,500</p>
+            <p class="dark:text-white">$4,000-$4,500</p>
           </div>
 
           <div class="md:flex md:items-center md:space-x-2">
@@ -557,16 +569,16 @@
         </div>
 
         <div
-          class="bg-white hover:shadow-md transition-all duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
+          class="bg-white dark:bg-gray-900 hover:shadow-md transition-all shadow-sm dark:border-gray-600 duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
         >
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-3">
               <img
-                class="w-12 h-12 border-2 border-gray-200 p-2 shadow-sm rounded"
+                class="w-12 h-12 border-2 dark:border-gray-700 border-gray-200 p-2 shadow-sm rounded"
                 src="images/linkedin_logo.png"
                 alt=""
               />
-              <h1 class="text-lg">Php Developer</h1>
+              <h1 class="text-lg dark:text-white">Php Developer</h1>
             </div>
             <p
               class="border border-[#06996f1c] h-10 w-10 text-center leading-10 bg-[#06996f1c] rounded-full md:hidden"
@@ -594,7 +606,7 @@
             <p class="text-gray-400">
               <i class="fa-solid fa-location-dot"></i> <span>Pakistan</span>
             </p>
-            <p>$4,000-$4,500</p>
+            <p class="dark:text-white">$4,000-$4,500</p>
           </div>
 
           <div class="md:flex md:items-center md:space-x-2">
@@ -612,16 +624,16 @@
         </div>
 
         <div
-          class="bg-white hover:shadow-md transition-all duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
+          class="bg-white dark:bg-gray-900 hover:shadow-md transition-all shadow-sm dark:border-gray-600 duration-300 rounded-md p-5 md:py-4 md:px-8 mt-10 border border-gray-200 md:flex md:justify-between"
         >
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-3">
               <img
-                class="w-12 h-12 border-2 border-gray-200 p-2 shadow-sm rounded"
+                class="w-12 h-12 border-2 dark:border-gray-700 border-gray-200 p-2 shadow-sm rounded"
                 src="images/facebook-logo.png"
                 alt=""
               />
-              <h1 class="text-lg">Web Designer</h1>
+              <h1 class="text-lg dark:text-white">Web Designer</h1>
             </div>
             <p
               class="border border-[#06996f1c] h-10 w-10 text-center leading-10 bg-[#06996f1c] rounded-full md:hidden"
@@ -649,7 +661,7 @@
             <p class="text-gray-400">
               <i class="fa-solid fa-location-dot"></i> <span>Australia</span>
             </p>
-            <p>$4,000-$4,500</p>
+            <p class="dark:text-white">$4,000-$4,500</p>
           </div>
 
           <div class="md:flex md:items-center md:space-x-2">
@@ -667,7 +679,7 @@
         </div>
         <div class="relative w-36 text-center mx-auto overflow-hidden">
           <p
-            class="text-center mt-8 text-gray-500 hover:text-[#047857] transition-all duration-300 cursor-pointer before:absolute before:w-full before:h-0.5 before:bg-[#047857] before:-left-36 before:bottom-0 before:opacity-0 hover:before:left-0 hover:before:opacity-100 hover:before:transition-all hover:before:duration-500"
+            class="text-center mt-8 text-gray-500 dark:text-gray-300 hover:text-[#047857] transition-all duration-300 cursor-pointer before:absolute before:w-full before:h-0.5 before:bg-[#047857] before:-left-36 before:bottom-0 before:opacity-0 hover:before:left-0 hover:before:opacity-100 hover:before:transition-all hover:before:duration-500"
           >
             See More Jobs
             <i class="fa-sharp fa-solid fa-arrow-right ml-2 text-sm"></i>
@@ -714,7 +726,7 @@
             </ul>
           </div>
           <span
-            class="absolute -top-12 md:top-1/2 md:-left-12 left-56 bg-white text-[#047857] w-24 h-24 rounded-full flex justify-center items-center text-center"
+            class="absolute -top-12 md:top-1/2 md:-left-12 left-40 bg-white text-[#047857] w-24 h-24 rounded-full flex justify-center items-center text-center"
             ><i class="fa-sharp fa-solid fa-play"></i
           ></span>
         </div>
@@ -727,7 +739,9 @@
       class="w-3/4 mx-auto md:w-3/4 pb-16 flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:justify-between lg:px-20"
     >
       <div class="flex flex-col justify-center items-center space-y-2">
-        <h1 class="text-4xl lg:text-5xl font-semibold text-gray-900">
+        <h1
+          class="text-4xl lg:text-5xl font-semibold text-gray-900 dark:text-white"
+        >
           1548k<i class="fa-solid fa-plus text-3xl lg:text-4xl"></i>
         </h1>
         <p class="text-sm lg:text-base font-medium text-gray-400">
@@ -735,13 +749,17 @@
         </p>
       </div>
       <div class="flex flex-col justify-center items-center space-y-2">
-        <h1 class="text-4xl lg:text-5xl font-semibold text-gray-900">
+        <h1
+          class="text-4xl lg:text-5xl font-semibold text-gray-900 dark:text-white"
+        >
           25<i class="fa-solid fa-plus text-3xl lg:text-4xl"></i>
         </h1>
         <p class="text-sm lg:text-base font-medium text-gray-400">BRANCHES</p>
       </div>
       <div class="flex flex-col justify-center items-center space-y-2">
-        <h1 class="text-4xl lg:text-5xl font-semibold text-gray-900">
+        <h1
+          class="text-4xl lg:text-5xl font-semibold text-gray-900 dark:text-white"
+        >
           9<i class="fa-solid fa-plus text-3xl lg:text-4xl"></i>
         </h1>
         <p class="text-sm lg:text-base font-medium text-gray-400">
@@ -770,7 +788,7 @@
             alt=""
           />
           <img
-            class="absolute top-36 -left-44 h-60 md:h-80 md:top-48 md:-left-28 border-8 border-white rounded-md"
+            class="absolute top-36 -left-44 h-60 md:h-80 md:top-48 md:-left-28 border-8 border-white dark:border-gray-900 dark:shadow-lg rounded-md"
             src="images/companies-img2.jpg"
             alt=""
           />
@@ -778,7 +796,7 @@
       </div>
 
       <div class="mt-28 md:order-1 basis-1/2">
-        <h1 class="text-3xl font-semibold tracking-wide">
+        <h1 class="text-3xl font-semibold tracking-wide dark:text-white">
           Find Best Companies
         </h1>
         <p class="mt-4 tracking-wide text-gray-500">
@@ -791,32 +809,32 @@
             class="1st space-y-5 md:flex md:space-y-0 md:justify-between md:items-center md:space-x-4"
           >
             <div
-              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+              class="flex items-center w-full bg-gray-100 dark:bg-gray-700 rounded-md space-x-4 py-3 px-4"
             >
               <div>
                 <img
-                  class="w-12 h-12 bg-white rounded-md p-2"
+                  class="w-12 h-12 bg-white dark:bg-gray-900 rounded-md p-2"
                   src="images/spotify.png"
                   alt=""
                 />
               </div>
               <div>
-                <h1 class="text-lg">Spotify</h1>
+                <h1 class="text-lg dark:text-white">Spotify</h1>
                 <p class="text-sm text-[#047857]">5 Vacancy</p>
               </div>
             </div>
             <div
-              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+              class="flex items-center w-full bg-gray-100 dark:bg-gray-700 rounded-md space-x-4 py-3 px-4"
             >
               <div>
                 <img
-                  class="w-12 h-12 bg-white rounded-md p-2"
+                  class="w-12 h-12 bg-white dark:bg-gray-900 rounded-md p-2"
                   src="images/facebook-logo.png"
                   alt=""
                 />
               </div>
               <div>
-                <h1 class="text-lg">Facebook</h1>
+                <h1 class="text-lg dark:text-white">Facebook</h1>
                 <p class="text-sm text-[#047857]">5 Vacancy</p>
               </div>
             </div>
@@ -825,32 +843,32 @@
             class="1st space-y-5 md:flex md:space-y-0 md:justify-between md:items-center md:space-x-4"
           >
             <div
-              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+              class="flex items-center w-full dark:bg-gray-700 bg-gray-100 rounded-md space-x-4 py-3 px-4"
             >
               <div>
                 <img
-                  class="w-12 h-12 bg-white rounded-md p-2"
+                  class="w-12 h-12 bg-white dark:bg-gray-900 rounded-md p-2"
                   src="images/google-logo.png"
                   alt=""
                 />
               </div>
               <div>
-                <h1 class="text-lg">Google</h1>
+                <h1 class="text-lg dark:text-white">Google</h1>
                 <p class="text-sm text-[#047857]">5 Vacancy</p>
               </div>
             </div>
             <div
-              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+              class="flex items-center w-full bg-gray-100 dark:bg-gray-700 rounded-md space-x-4 py-3 px-4"
             >
               <div>
                 <img
-                  class="w-12 h-12 bg-white rounded-md p-2"
+                  class="w-12 h-12 bg-white dark:bg-gray-900 rounded-md p-2"
                   src="images/android_logo.png"
                   alt=""
                 />
               </div>
               <div>
-                <h1 class="text-lg">Android</h1>
+                <h1 class="text-lg dark:text-white">Android</h1>
                 <p class="text-sm text-[#047857]">5 Vacancy</p>
               </div>
             </div>
@@ -859,39 +877,39 @@
             class="1st space-y-5 md:flex md:space-y-0 md:justify-between md:items-center md:space-x-4"
           >
             <div
-              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+              class="flex items-center w-full bg-gray-100 dark:bg-gray-700 rounded-md space-x-4 py-3 px-4"
             >
               <div>
                 <img
-                  class="w-12 h-12 bg-white rounded-md p-2"
+                  class="w-12 h-12 bg-white dark:bg-gray-900 rounded-md p-2"
                   src="images/lenovo-logo.png"
                   alt=""
                 />
               </div>
               <div>
-                <h1 class="text-lg">Lenovo</h1>
+                <h1 class="text-lg dark:text-white">Lenovo</h1>
                 <p class="text-sm text-[#047857]">5 Vacancy</p>
               </div>
             </div>
             <div
-              class="flex items-center w-full bg-gray-100 rounded-md space-x-4 py-3 px-4"
+              class="flex items-center w-full bg-gray-100 dark:bg-gray-700 rounded-md space-x-4 py-3 px-4"
             >
               <div>
                 <img
-                  class="w-12 h-12 bg-white rounded-md p-2"
+                  class="w-12 h-12 bg-white dark:bg-gray-900 rounded-md p-2"
                   src="images/linkedin_logo.png"
                   alt=""
                 />
               </div>
               <div>
-                <h1 class="text-lg">Linkedin</h1>
+                <h1 class="text-lg dark:text-white">Linkedin</h1>
                 <p class="text-sm text-[#047857]">5 Vacancy</p>
               </div>
             </div>
           </div>
           <div class="relative w-48 text-center overflow-hidden">
             <p
-              class="text-center mt-4 text-gray-500 hover:text-[#047857] transition-all duration-300 cursor-pointer before:absolute before:w-full before:h-0.5 before:bg-[#047857] before:-left-36 before:bottom-0 before:opacity-0 hover:before:left-0 hover:before:opacity-100 hover:before:transition-all hover:before:duration-500"
+              class="text-center mt-4 text-gray-500 dark:text-gray-300 hover:text-[#047857] transition-all duration-300 cursor-pointer before:absolute before:w-full before:h-0.5 before:bg-[#047857] before:-left-36 before:bottom-0 before:opacity-0 hover:before:left-0 hover:before:opacity-100 hover:before:transition-all hover:before:duration-500"
             >
               See More Companies
               <i class="fa-sharp fa-solid fa-arrow-right ml-2 text-sm"></i>
@@ -904,8 +922,10 @@
 
     <!-- Question answers section  -->
     <section class="w-11/12 mx-auto md:w-10/12 pb-16 lg:mt-20">
-      <h1 class="text-3xl text-center font-semibold">Questions & Answers</h1>
-      <p class="text-base text-gray-500 text-center my-4">
+      <h1 class="text-3xl text-center font-semibold dark:text-white">
+        Questions & Answers
+      </h1>
+      <p class="text-base text-gray-500 dark:text-gray-300 text-center my-4">
         Search all the open positions on the web. Get your own personalized
         salary <br />
         estimate. Read reviews on over 30000+ companies worldwide.
@@ -915,7 +935,7 @@
           class="1st space-y-5 md:flex md:justify-between md:items-center md:space-y-0"
         >
           <div class="lg:basis-1/2">
-            <h1 class="text-xl font-medium">
+            <h1 class="text-xl font-medium dark:text-white">
               <span
                 ><i
                   class="fa-solid fa-question text-sm border-2 border-[#047857] text-[#047857] h-6 w-6 rounded-full text-center mr-1 mb-2"
@@ -932,7 +952,7 @@
             </p>
           </div>
           <div class="lg:basis-1/2">
-            <h1 class="text-xl font-medium">
+            <h1 class="text-xl font-medium dark:text-white">
               <span
                 ><i
                   class="fa-solid fa-question text-sm border-2 border-[#047857] text-[#047857] h-6 w-6 rounded-full text-center mr-1 mb-2"
@@ -951,7 +971,7 @@
           class="2nd space-y-5 md:flex md:justify-between md:items-center md:space-y-0"
         >
           <div class="lg:basis-1/2">
-            <h1 class="text-xl font-medium">
+            <h1 class="text-xl font-medium dark:text-white">
               <span
                 ><i
                   class="fa-solid fa-question text-sm border-2 border-[#047857] text-[#047857] h-6 w-6 rounded-full text-center mr-1 mb-2"
@@ -966,7 +986,7 @@
             </p>
           </div>
           <div class="lg:basis-1/2">
-            <h1 class="text-xl font-medium">
+            <h1 class="text-xl font-medium dark:text-white">
               <span
                 ><i
                   class="fa-solid fa-question text-sm border-2 border-[#047857] text-[#047857] h-6 w-6 rounded-full text-center mr-1 mb-2"
@@ -990,7 +1010,7 @@
     <!-- Explore Job section  -->
     <section class="w-11/12 mx-auto md:w-10/12 pb-16 lg:mt-20">
       <div
-        class="relative bg-white shadow-xl py-10 px-10 rounded-md overflow-hidden md:flex md:justify-between md:items-center"
+        class="relative bg-white dark:bg-gray-900 shadow-xl py-10 px-10 rounded-md overflow-hidden md:flex md:justify-between md:items-center"
       >
         <div class="text-center md:text-start md:basis-3/5">
           <span
@@ -998,10 +1018,12 @@
           >
             <i class="fa-regular fa-envelope"></i
           ></span>
-          <h1 class="text-2xl z-50 relative font-semibold tracking-wide mb-3">
+          <h1
+            class="text-2xl z-40 relative font-semibold tracking-wide mb-3 dark:text-white"
+          >
             Explore a job now!
           </h1>
-          <p class="text-center md:text-start relative z-50 text-gray-400 mb-5">
+          <p class="text-center md:text-start relative z-40 text-gray-400 mb-5">
             Search all the open positions on the web. Get your own personalized
             salary estimate. Read reviews on over 30000+ companies worldwide.
           </p>
@@ -1028,6 +1050,104 @@
       </div>
     </section>
     <!-- Explore Job section  -->
+
+    <!-- Footer section  -->
+    <footer class="bg-[#0F172A] dark:bg-gray-800">
+      <section class="py-16 lg:mt-20">
+        <div
+          class="text-center md:flex md:justify-between md:items-center w-11/12 mx-auto md:w-10/12"
+        >
+          <h1 class="text-3xl text-white font-medium tracking-wide md:pb-10">
+            Jobstack
+          </h1>
+          <ul
+            class="flex justify-between items-center my-7 md:my-0 md:pb-10 pb-6 md:space-x-6"
+          >
+            <li class="text-gray-200 font-normal">Home</li>
+            <li class="text-gray-200 font-normal">How it works</li>
+            <li class="text-gray-200 font-normal">Create a job</li>
+            <li class="text-gray-200 font-normal">About us</li>
+            <li class="text-gray-200 font-normal">Contact us</li>
+          </ul>
+        </div>
+        <hr class="h-0.5 bg-gray-400" />
+        <div
+          class="w-11/12 mx-auto md:w-10/12 pt-8 space-y-5 md:flex md:items-center md:space-y-0"
+        >
+          <h1
+            class="text-base text-center font-semibold tracking-wide text-gray-300 md:text-sm"
+          >
+            © 2023 Jobstack. Design with ❤️ by MEHEDI IRFAN.
+          </h1>
+          <ul
+            class="flex items-center space-x-2 text-center justify-center md:ml-20 lg:ml-80"
+          >
+            <li
+              class="text-gray-300 border-2 border-gray-600 py-1 px-2 text-sm rounded-sm hover:bg-[#047857] hover:text-white transition duration-300 hover:border-2 hover:border-[#047857]"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+            <li
+              class="text-gray-300 border-2 border-gray-600 py-1 px-2 text-sm rounded-sm hover:bg-[#047857] hover:text-white transition duration-300 hover:border-2 hover:border-[#047857]"
+            >
+              <i class="fa-brands fa-dribbble"></i>
+            </li>
+            <li
+              class="text-gray-300 border-2 border-gray-600 py-1 px-2 text-sm rounded-sm hover:bg-[#047857] hover:text-white transition duration-300 hover:border-2 hover:border-[#047857]"
+            >
+              <i class="fa-brands fa-behance"></i>
+            </li>
+            <li
+              class="text-gray-300 border-2 border-gray-600 py-1 px-2 text-sm rounded-sm hover:bg-[#047857] hover:text-white transition duration-300 hover:border-2 hover:border-[#047857]"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+            <li
+              class="text-gray-300 border-2 border-gray-600 py-1 px-2 text-sm rounded-sm hover:bg-[#047857] hover:text-white transition duration-300 hover:border-2 hover:border-[#047857]"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </li>
+            <li
+              class="text-gray-300 border-2 border-gray-600 py-1 px-2 text-sm rounded-sm hover:bg-[#047857] hover:text-white transition duration-300 hover:border-2 hover:border-[#047857]"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li
+              class="text-gray-300 border-2 border-gray-600 py-1 px-2 text-sm rounded-sm hover:bg-[#047857] hover:text-white transition duration-300 hover:border-2 hover:border-[#047857]"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li
+              class="text-gray-300 border-2 border-gray-600 py-1 px-2 text-sm rounded-sm hover:bg-[#047857] hover:text-white transition duration-300 hover:border-2 hover:border-[#047857]"
+            >
+              <i class="fa-regular fa-envelope"></i>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer section  -->
+
+    <!-- up arrow section  -->
+    <section id="scollBtn" class="fixed bottom-5 right-5 z-50">
+      <span class="text-xs bg-[#047857] py-2 px-3 text-white rounded-full">
+        <i class="fa-solid fa-arrow-up"></i
+      ></span>
+    </section>
+    <!-- up arrow section  -->
+
+    <!-- dark mode and light mode section  -->
+    <button
+      class="fixed top-80 left-2 w-7 h-12 rounded-2xl bg-white transition duration-300 focus:outline-none shadow-lg"
+    >
+      <div
+        id="switch-toggle"
+        class="w-7 h-7 leading-5 relative rounded-full transition duration-300 dark:bg-black transform bg-yellow-500 -translate-y-3 dark:translate-y-3 p-1 text-white"
+      >
+        <i class="fa-solid fa-sun"></i>
+      </div>
+    </button>
+    <!-- dark mode and light mode section  -->
 
     <!-- script file  -->
     <script src="Js/Script.js"></script>
